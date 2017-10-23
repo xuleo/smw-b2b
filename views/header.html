@@ -1,0 +1,300 @@
+<!--顶部 -->
+<header class="g-header">
+    <div class="m-top">
+    	<div class="w f-cb">
+	        <!-- 欢迎语 -->
+	        <span class="u-hello">
+				<a href="/">您好，欢迎来到尚木网！</a>
+	        </span>
+	        <!-- 右侧导航菜单 -->
+	        <ul class="m-topNav f-fr">
+	            <li>
+	                <a href="javascript:;">我的订单</a>
+	            </li>
+	            <li>
+	                <a href="javascript:;">
+						购物车
+						<!--购物车商品数量-->
+	                    <span class="u-shopcartNum">45</span>
+	                    <span class="u-shopcartIcon">
+	                        <img src="img/shopcart-jt.png"/>
+	                    </span>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="javascript:;">会员中心</a>
+	            </li>
+	            <li>
+	                <a href="javascript:;">关于我们</a>
+	            </li>
+	            <li>
+	                <a href="javascript:;">联系我们</a>
+	            </li>
+	        </ul>
+    	</div>
+    </div>
+    <!--logo 搜索框 电话-->
+    <div class="m-header">
+    	<div class="w">
+	    	<!--左侧logo-->
+	    	<span class="u-logo f-banselect">
+	    		<a href="/"><img src="img/logo.png" width="100%"/></a>
+	    	</span>
+	    	<!--中间搜索框-->
+	    	<div class="m-search-container">
+	    		<div class="m-search">
+	    			<!--现货-->
+	    			<span class="u-search-select u-search-select-1 f-fl f-banselect">
+	    				<span class="u-search-select-active">现货</span>
+	    				<span class="u-img">
+	    					<img src="img/jt-green.png"/>
+	    				</span>
+	    				<ul class="u-search-option u-search-option-1">
+	    					<li class="active">现货</li>
+	    					<li>期货</li>
+	    				</ul>
+	    			</span>
+	    			<!--input-->
+	    			<input class="u-search-text f-fl" type="text" name="" id="" value="" placeholder="辐射松"/>
+	    			<!--搜索按钮-->
+	    			<input class="u-search-btn f-fr" type="button" name="" id="" value="搜索" />
+	    		</div>
+	    		<!--关键字-->
+	    		<ul class="u-keyword f-cb">
+	    			<li><a href="javascript:;">红橡</a></li>
+	    			<li><a href="javascript:;">白橡</a></li>
+	    			<li><a href="javascript:;">铁木豆</a></li>
+	    			<li><a href="javascript:;">铁线子</a></li>
+	    			<li><a href="javascript:;">殷桃木</a></li>
+	    			<li><a href="javascript:;">花梨木</a></li>
+	    			<li><a href="javascript:;">水曲柳</a></li>
+	    			<li><a href="javascript:;">红雪松</a></li>
+	    			<li><a href="javascript:;">云杉</a></li>
+	    		</ul>
+	    	</div>
+	    	<!--电话-->
+	    	<div class="m-tel">
+	    		<!--电话号码-->
+	    		<div class="u-num-container">
+	    			<span class="u-img"><img src="img/tel-ico.png" width="100%"/></span>
+	    			<span class="u-num">0512-88888888</span>
+	    		</div>
+	    		<!--服务时间-->
+	    		<p class="u-servicingTime">服务时间：工作日8:30-17:30</p>
+	    	</div>
+    	</div>
+    </div>
+	<!--热门服务 导航-->
+	<div class="m-menu">
+		<div class="w f-cb">
+			<!--热门服务-->
+			<div class="m-popularServices f-fl f-cb">
+				<span class="f-fl">热门服务</span>
+				<!--菜单图标-->
+				<span class="f-fr u-img" id="u-btn-hot">
+					<img src="img/rmfw-ico.png" width="100%"/>
+				</span>
+			</div>
+			<!--导航-->
+			<nav class="m-nav f-fl">
+				<ul class="f-cb">
+					<li><a href="/">首页</a></li>
+					<li><a href="buyresource">求购资源</a></li>
+					<li><a href="spotgoods">现货资源</a></li>
+					<li><a href="javascript:;">市场行情</a></li>
+					<li><a href="encyclopedia">木材百科</a></li>
+					<li><a href="javascript:;">木材超市</a></li>
+				</ul>
+			</nav>
+			<!--隐藏的导航索引-->
+			<div id="hidden" style="display: none;">
+				{{navIndex}}
+			</div>
+			<!--左侧导航栏-->
+			<div class="m-leftNav-container w">
+				<div class="m-leftNav">
+					<ul>
+						<li class="u-leftNav-li1 f-boxSizing">
+							<div class="u-title-container">
+								<span class="u-icon"><img src="img/buy-ico.png" width="100%"/></span>
+								<span class="u-icon-active"><img src="img/buy-ico-active.png" width="100%"/></span>
+								<span class="u-title">买木材</span>
+								<span class="u-icon2"><img src="img/jt_white.png" width="100%"/></span>
+								<span class="u-icon2-active"><img src="img/jt-green-active.png" width="100%"/></span>
+							</div>
+							<!--三级导航-->
+							<ul class="m-leftNav-three">
+								{{# navData1}}
+									<li><a href="{{link}}">{{title}}</a></li>
+								{{/ navData1}}
+							</ul>
+						</li>
+						<li class="u-leftNav-li1 f-boxSizing">
+							<div class="u-title-container">
+								<span class="u-icon"><img src="img/sell-ico.png"/></span>
+								<span class="u-icon-active"><img src="img/sell-ico-active.png" width="100%"/></span>
+								<span class="u-title">卖木材</span>
+								<span class="u-icon2"><img src="img/jt_white.png" width="100%"/></span>
+								<span class="u-icon2-active"><img src="img/jt-green-active.png" width="100%"/></span>
+							</div>
+							<!--三级导航-->
+							<ul class="m-leftNav-three">
+								{{# navData2}}
+									<li><a href="{{link}}">{{title}}</a></li>
+								{{/ navData2}}
+							</ul>
+						</li>
+						<li class="u-leftNav-li1 f-boxSizing">
+							<div class="u-title-container">
+								<span class="u-icon"><img src="img/look-ico.png"/></span>
+								<span class="u-icon-active"><img src="img/look-ico-active.png" width="100%"/></span>
+								<span class="u-title">看行情</span>
+								<span class="u-icon2"><img src="img/jt_white.png" width="100%"/></span>
+								<span class="u-icon2-active"><img src="img/jt-green-active.png" width="100%"/></span>						
+							</div>
+							<!--三级导航-->
+							<ul class="m-leftNav-three">
+								{{# navData3}}
+									<li><a href="{{link}}">{{title}}</a></li>
+								{{/ navData3}}
+							</ul>
+						</li>
+						<li class="u-leftNav-li1 f-boxSizing">
+							<div class="u-title-container">						
+								<span class="u-icon"><img src="img/check-ico.png"/></span>
+								<span class="u-icon-active"><img src="img/check-ico-active.png" width="100%"/></span>
+								<span class="u-title">木百科</span>
+								<span class="u-icon2"><img src="img/jt_white.png" width="100%"/></span>
+								<span class="u-icon2-active"><img src="img/jt-green-active.png" width="100%"/></span>
+							</div>
+							<!--三级导航-->
+							<ul class="m-leftNav-three">
+								{{# navData4}}
+									<li><a href="{{link}}">{{title}}</a></li>
+								{{/ navData4}}
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- 右边固定导航侧栏 start -->
+<div class="m-navRight f-banselect">
+	<ul class="m-navRight-ul1 m-navRight-ul">
+		<li>
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/me-right.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/shop-right.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/nav-right.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/search-right.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/contact.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+	</ul>
+	
+	<ul class="m-navRight-ul2 m-navRight-ul">
+		<li class="u-backTop">
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/backtop-right.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<span class="u-img">
+					<img src="img/bj-right.png" width="100%"/>					
+				</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- 右边固定导航侧栏 end -->
+
+<!--浮动搜索-->
+<div class="m-floatingSearch">
+	<div class="w">
+		<!--左侧logo-->
+		<span class="u-logo f-banselect">
+			<a href="/"><img src="img/logo-small.png" width="100%"/></a>
+		</span>
+		<!--中间搜索框-->
+		<div class="m-search-container">
+			<div class="m-search">
+				<!--现货-->
+				<span class="u-search-select u-search-select-2 f-fl f-banselect">
+					<span class="u-search-select-active">现货</span>
+					<span class="u-img">
+						<img src="img/jt-green.png"/>
+					</span>
+					<ul class="u-search-option u-search-option-2">
+						<li class="active">现货</li>
+						<li>期货</li>
+					</ul>
+				</span>
+				<!--input-->
+				<input class="u-search-text f-fl" type="text" name="" id="" value="" placeholder="辐射松"/>
+				<!--搜索按钮-->
+				<input class="u-search-btn f-fr" type="button" name="" id="" value="搜索" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+    var nav=parseInt(document.getElementById('hidden').innerHTML);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

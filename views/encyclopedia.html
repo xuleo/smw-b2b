@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>{{title}}</title>
+	    <link rel="stylesheet" type="text/css" href="css/reset_pc.css" />
+	    <link rel="stylesheet" type="text/css" href="css/function.css" />
+	    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	    <link rel="stylesheet" type="text/css" href="css/encyclopedia.css"/>
+	    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	    <!--[if (gte IE 6)&(lte IE 8)]>
+	    <script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+	    <![endif]-->
+	    <!--[if lte IE 9]>
+	    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/html5.min.js" type="text/javascript" charset="utfs" type="text/javascript" charset="utf-8"></script>
+	    <![endif]-->
+	    <!--[if lte IE 7]>
+	    <div id="errorie"><div>您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-8-worldwide-languages">点击升级</a>&nbsp;&nbsp;强烈建议您更改换浏览器：<a href="http://down.tech.sina.com.cn/content/40975.html" target="_blank">谷歌 Chrome</a></div></div>
+	    <script type="text/javascript">
+	        alert('您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本')
+	    </script>
+	    <![endif]-->
+	</head>
+	<body>
+		<!-- 顶部 start -->
+		<header class="g-header">
+		    <div class="m-top">
+		    	<div class="w f-cb">
+			        <!--左侧导航-->
+					<nav class="m-nav f-fl">
+						<ul class="f-cb">
+							<li><a href="/">首页</a></li>
+							<li><a href="buyresource">求购资源</a></li>
+							<li><a href="spotgoods">现货资源</a></li>
+							<li><a href="javascript:;">市场行情</a></li>
+							<li><a href="encyclopedia">木材百科</a></li>
+							<li><a href="javascript:;">木材超市</a></li>
+						</ul>
+					</nav>
+					<!--隐藏的导航索引-->
+					<div id="hidden" style="display: none;">
+						{{navIndex}}
+					</div>
+					<script type="text/javascript">
+					    var nav=parseInt(document.getElementById('hidden').innerHTML);
+					</script>
+			        <!-- 右侧导航菜单 -->
+			        <ul class="m-topNav f-fr">
+			            <li>
+			                <a href="javascript:;">我的订单</a>
+			            </li>
+			            <li>
+			                <a href="javascript:;">
+								购物车
+								<!--购物车商品数量-->
+			                    <span class="u-shopcartNum">45</span>
+			                    <span class="u-shopcartIcon">
+			                        <img src="img/shopcart-jt.png"/>
+			                    </span>
+			                </a>
+			            </li>
+			            <li>
+			                <a href="javascript:;">会员中心</a>
+			            </li>
+			            <li>
+			                <a href="javascript:;">关于我们</a>
+			            </li>
+			            <li>
+			                <a href="javascript:;">联系我们</a>
+			            </li>
+			        </ul>
+		    	</div>
+		    </div>
+		</header>
+		<!-- 顶部 end -->
+		<!-- 右边固定导航侧栏 start -->
+		<div class="m-navRight">
+			<ul class="m-navRight-ul1 m-navRight-ul">
+				<li>
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/me-right.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/shop-right.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/nav-right.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/search-right.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/contact.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+			</ul>
+			
+			<ul class="m-navRight-ul2 m-navRight-ul">
+				<li class="u-backTop">
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/backtop-right.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="u-img">
+							<img src="img/bj-right.png" width="100%"/>					
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 右边固定导航侧栏 end -->
+		<!-- 主体部分 start -->
+		<div class="g-encyclopedia-main">
+			<!--logo-->
+			<div class="u-logo">
+				<img src="img/logo.png"/>
+			</div><br />
+			<!--搜索-->
+			<div class="m-search-container">
+	    		<div class="m-search">
+	    			<!--搜索图标-->
+	    			<span class="u-search-ico f-fl">
+	    				<span class="u-img">
+	    					<img src="img/search-hui.png"/>
+	    				</span>
+	    			</span>
+	    			<!--input-->
+	    			<input class="u-search-text f-fl" type="text" name="" id="" value="" placeholder="请输入您想要了解的木材"/>
+	    			<!--搜索按钮-->
+	    			<input class="u-search-btn f-fr" type="button" name="" id="" value="搜索" />
+	    		</div>
+	    	</div><br />
+			<!--热搜产品-->
+			<div class="m-topSearch-container f-cb">
+				<!--左侧图片广告-->
+				<div class="swiper-container f-fl">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide">
+				    	<a href="javascript:;" class="m-topSearch-img">
+							<span class="u-img"><img src="img/topSearch-1.png"/></span>
+							<p class="u-title">樟子松板材</p>
+						</a>
+				    </div>
+				  </div>
+				</div>
+				<!--右侧热搜木材-->				
+				<div class="m-topSearch-text f-fr">
+					<h3 class="f-cb">
+						<span class="f-fl">热搜木材</span>
+						<span class="u-hyh-btn f-fr f-banselect">
+							<span><img src="img/hyh-ico.png"/></span>
+							<span>换一换</span>
+						</span>
+					</h3>
+					<ul class="m-topSearch-list f-cb">
+						<li><a href="javascript:;">酸枝木</a></li>
+						<li><a href="javascript:;">酸枝木</a></li>
+						<li><a href="javascript:;">蔷薇木（PLB）</a></li>
+						<li><a href="javascript:;">新西兰柳桉</a></li>
+						<li><a href="javascript:;">蔷薇</a></li>
+						<li><a href="javascript:;">意大利亚辐射松</a></li>
+						<li><a href="javascript:;">酸枝木</a></li>
+						<li><a href="javascript:;">蔷薇木（PLB）</a></li>
+						<li><a href="javascript:;">意大利亚辐射松</a></li>
+						<li><a href="javascript:;">新西兰柳桉</a></li>
+						<li><a href="javascript:;">新西兰柳桉</a></li>
+						<li><a href="javascript:;">意大利亚</a></li>
+						<li><a href="javascript:;">新西兰柳桉</a></li>
+						<li><a href="javascript:;">酸枝木</a></li>
+						<li><a href="javascript:;">蔷薇木（PLB）</a></li>
+						<li><a href="javascript:;">酸枝木</a></li>
+						<li><a href="javascript:;">蔷薇木（PLB）</a></li>
+						<li><a href="javascript:;">意大利亚辐射松</a></li>
+						<li><a href="javascript:;">新西兰柳桉</a></li>
+						<li><a href="javascript:;">酸枝木</a></li>
+						<li><a href="javascript:;">蔷薇木（PLB）</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 主体部分 end -->
+		
+		<!-- 底部版权 -->
+		<div class="m-copyright">
+			<p>
+				<span>©2015-2017版权所有</span>
+				<span class="u-name">
+					<a href="/">江苏长江木商数字科技有限公司</a>
+				</span>
+			</p>
+		</div>
+	</body>
+	<script src="js/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload=function () {
+			$('.m-navRight-ul1').stop().animate({
+				'top': '50%',
+				'margin-top': -$('.m-navRight-ul1').outerHeight()/2
+			},100)
+			$('.m-navRight-ul2').show()
+			$('.m-navRight-ul2').stop().animate({
+				'bottom': '0',
+			},100)
+			var mySwiper = new Swiper('.swiper-container',{
+				autoplay : 5000,//可选选项，自动滑动
+				loop : true,//可选选项，开启循环
+				autoplayDisableOnInteraction : false,
+			})
+			
+			/*点击换一换*/
+			$('.u-hyh-btn').click(function () {
+				$(".m-topSearch-list li").each(function(){
+					if(parseInt(Math.random()*2)==0){
+						$(this).prependTo($(this).parent());
+					}	
+				});
+			})
+		}
+	</script>
+</html>
